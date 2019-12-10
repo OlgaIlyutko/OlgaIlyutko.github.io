@@ -12,12 +12,13 @@ html {
 
 .wrapper {
     display: block;
+    background-color: #4f5475;
     /*min-width: 500px*/
 }
 
 .wrapper-main {
     margin: 0 auto;
-    width: 600px;
+    width: 500px;
 
 }
 
@@ -26,7 +27,6 @@ body {
     font-size: 18px;
     line-height: 20px;
     margin: 0;
-    background-color: #4f5475;
 }
 
 ul {
@@ -73,11 +73,11 @@ header {
 }
 
 .input-answer {
-    height: 80px;
-    /*width: 400px;*/
+    /*height: 80px;
+    width: 400px;*/
 }
 
 .button-check {
-    height: 80px;
-    /*width: 150px;*/
+    /*height: 80px;
+    width: 150px;*/
 }
