@@ -73,11 +73,15 @@ header {
 }
 
 .input-answer {
-    /*height: 80px;
-    width: 400px;*/
+    height: 40px;
+    width: 70%;
 }
 
 .button-check {
-    /*height: 80px;
-    width: 150px;*/
+    height: 40px;
+    width: 20%;
+}
+
+.img-map {
+    margin: 15px 0;
 }
