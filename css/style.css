@@ -1,0 +1,334 @@
+*,::before,::after {
+    -webkit-box-sizing: inherit;
+    box-sizing: inherit
+}
+
+html {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+   overflow-y: scroll;
+
+}
+
+.wrapper {
+    display: block;
+    min-width: 1200px
+}
+
+.wrapper-main {
+    margin: 0 auto;
+    width: 1200px;
+
+}
+
+body {
+    font-family: "Gotham",Arial,sans-serif;
+    font-size: 18px;
+    line-height: 20px;
+    margin: 0
+}
+
+ul {
+    list-style: none;
+  margin-bottom: 0;
+  margin-top: 0;
+}
+
+.h1,h2,li {
+    margin: 0
+}
+
+a {
+    text-decoration: none;
+    color: #000
+}
+
+.visually-hidden:not(:focus):not(:active),input[type=checkbox].visually-hidden,input[type=radio].visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    -webkit-clip-path: inset(100%);
+    clip-path: inset(100%);
+    clip: rect(0,0,0,0);
+    overflow: hidden
+}
+
+header {
+    height: 70px;
+    background-color: #006848;
+    position: relative
+}
+
+.head {
+    margin: 40px 0 40px 25px
+}
+/*
+.vacancy-like {
+  display: inline-block;
+    color: #fff;
+    font-size: 24px;
+    padding: 10px 45px;
+    margin-top: 7px;
+    border-radius: 10px 0 10px 0;
+    background: -webkit-gradient(linear,left top,left bottom,from(#00afff),to(#1f5bd7));
+    background: -webkit-linear-gradient(top,#00afff 0%,#1f5bd7 100%);
+    background: -o-linear-gradient(top,#00afff 0%,#1f5bd7 100%);
+    background: -webkit-gradient(linear,left top, left bottom,from(#00afff),to(#1f5bd7));
+    background: linear-gradient(to bottom,#00afff 0%,#1f5bd7 100%);
+    border: 0;
+    -webkit-box-shadow: 3px 3px 5px 0 rgba(0,0,0,.5);
+    box-shadow: 3px 3px 5px 0 rgba(0,0,0,.5);
+    cursor: pointer;
+    -webkit-transition: -webkit-transform .3s ease-in-out;
+    transition: -webkit-transform .3s ease-in-out;
+    -o-transition: transform .3s ease-in-out;
+    transition: transform .3s ease-in-out;
+    transition: transform .3s ease-in-out,-webkit-transform .3s ease-in-out;
+    outline: 0;
+    font-weight: 400;
+    margin: 0 auto;
+    -webkit-align-self: center;
+    -ms-flex-item-align: center;
+    -ms-grid-row-align: center;
+    align-self: center
+}
+
+
+
+header::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 5px;
+    background-color: rgba(31,91,215,.7)
+}
+
+header::before {
+    content: "";
+    position: absolute;
+    left: 40px;
+    bottom: 5px;
+    width: 200px;
+    height: 60px;
+    background: url(../img/mir2.png) no-repeat
+}
+
+.vacancy-ul {
+    list-style: square;
+
+}
+
+.vacancy-summary {
+    padding: 2px 0;
+    margin: 0;
+    font-size: 16px
+}
+
+.vacancy-desc {
+    text-align: left
+}
+
+.vacancy-body {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-flex: 1;
+    -webkit-flex-grow: 1;
+    -ms-flex-positive: 1;
+    flex-grow: 1
+}
+
+.modal {
+    position: fixed;
+    background-color: #fff;
+    width: 700px;
+    min-height: 600px;
+    max-width: 100%;
+    max-height: 100%;
+    left: 50%;
+    top: 50%;
+    -webkit-box-shadow: 0 10px 30px 10px rgba(0,0,0,.4);
+    box-shadow: 0 10px 30px 10px rgba(0,0,0,.4);
+    -webkit-transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%);
+    z-index: 2;
+    padding: 40px 40px 20px 40px;
+    border-radius: 5px;
+    display: none;
+    overflow-y: auto;
+  
+
+  
+}
+
+.modal-show {
+    display: block
+}
+
+.modal-name {
+    text-align: left;
+    margin-bottom: 20px;
+    position: relative;
+    line-height: 22px;
+}
+
+.modal-body-name {
+    margin-bottom: 0
+}
+
+.modal-overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    background-color: rgba(0,0,0,.5)
+}
+
+.overlay-show {
+    display: block
+}
+
+.modal-name::after {
+    content: "";
+    position: absolute;
+    bottom: -20px;
+    left: 0;
+    height: 3px;
+    width: 100%;
+    background-color: rgba(31,91,215,.7)
+}
+
+.modal-body {
+    font-size: 16px
+}
+
+.modal-close {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 22px;
+    height: 22px;
+    background-color: transparent;
+    border: 0;
+    cursor: pointer;
+    font-size: 0
+}
+
+.modal-close::before,.modal-close::after {
+    content: "";
+    position: absolute;
+    top: 10px;
+    left: 0;
+    background-color: rgba(0,0,0,.5);
+    width: 23px;
+    height: 2px
+}
+
+.modal-close::before {
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg)
+}
+
+.modal-close::after {
+    -webkit-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    transform: rotate(-45deg)
+}
+.modal-body-but {
+  text-align: center;
+  margin-top: 10px;
+  
+-webkit-backface-visibility: hidden;
+-moz-backface-visibility:    hidden;
+-ms-backface-visibility:     hidden;
+}
+
+.new-but {
+  padding: 10px;
+  width: 130px;
+  
+}
+
+.vacancy-name-a {
+  border-bottom: 3px solid rgba(31,91,215,.7);
+  font-weight: 500;
+  font-size: 22px;
+  margin-bottom: 15px;
+  display: inline-block;
+}
+
+.vacancy-ul-wait {
+  padding: 0;
+  margin-bottom: 5px;
+}
+
+.vacancy-demands li {
+  font-size: 16px;
+}
+.main-desc {
+  margin-left: 40px;
+  font-weight: 300;
+  font-style: italic;
+}
+
+.name-department {
+  margin-left: 25px;
+  font-size: 20px;
+}
+
+
+#tab-in-1:checked~.tabs #tab-1,
+#tab-in-2:checked~.tabs #tab-2 {
+    display: block;
+}
+
+#tab-in-1:checked+label[for=tab-in-1],
+#tab-in-2:checked+label[for=tab-in-2] {
+    background-color: #00a263;
+}
+
+.tab-item {
+    display: none;
+    padding: 10px 0;
+}
+
+
+.tabs {
+    background: linear-gradient(#00a263 0, #fff 75px), #fff;
+}
+
+.tab-label {
+    background: #006848;
+    padding: 15px 25px;
+    font-size: 20px;
+    color: #fff;
+    display: inline-block;
+    max-width: 250px;
+    min-height: 90px;
+  vertical-align: bottom;
+  border-radius: 0 30px 0 0;
+  
+}
+
+*/
