@@ -12,12 +12,12 @@ html {
 
 .wrapper {
     display: block;
-    min-width: 1200px
+    min-width: 500px
 }
 
 .wrapper-main {
     margin: 0 auto;
-    width: 900px;
+    width: 500px;
 
 }
 
