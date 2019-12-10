@@ -4,6 +4,7 @@ const input1 = document.querySelector('#question-input-1');
 const button1 = document.querySelector('#question-button-1');
 const clearStorage = document.querySelector('#clear');
 const clearAllStorage = document.querySelector('#clearAll');
+const imgMap = document.querySelector('.map>img')
 
 const allButton = document.querySelector('.questons-block');
 
@@ -29,10 +30,14 @@ const checkAnswer = (evt) => {
 
     if (!localStorage.getItem("button" + numberQuestions)) {
         if (activeInput.value === ANSWER[numberQuestions]) {
-            localStorage.setItem(activeButtonId, true);
-            activeInput.setAttribute('disabled', 'disabled');
-            activeButton.setAttribute('disabled', 'disabled');
 
+            imgMap.src = 'img/' + numberQuestions + '.png';
+            localStorage.setItem('#map-img', imgMap.src);
+
+            activeButton.setAttribute('disabled', 'disabled');
+            localStorage.setItem(activeButtonId, true);
+
+            activeInput.setAttribute('disabled', 'disabled');
             localStorage.setItem(activeInputId, activeInput.value);
         }
         else {
@@ -48,10 +53,17 @@ const loadLastAnswer = () => {
             let key = localStorage.key(i);
             
             let notActiveElement = document.querySelector(key);
-            notActiveElement.setAttribute('disabled', 'disabled');
+            
+            if (key.split('-')[1] === 'button') {
+                notActiveElement.setAttribute('disabled', 'disabled');
+            }
             
             if (key.split('-')[1] === 'input') {
                 notActiveElement.value = localStorage.getItem(key);
+                notActiveElement.setAttribute('disabled', 'disabled');
+            }
+            if (key.split('-')[1] === 'img') {
+                notActiveElement.src = localStorage.getItem(key);
             }
         }
     }
@@ -63,7 +75,11 @@ clearStorage.addEventListener('click', () => {
         for (let i=0; i<localStorage.length; i++) {
             let key = localStorage.key(i);            
             let notActiveElement = document.querySelector(key);
-            notActiveElement.removeAttribute('disabled');
+            if (key.split('-')[1] === 'img') {
+                notActiveElement.src = 'img/0.png';
+            } else {
+                notActiveElement.removeAttribute('disabled');
+            }
         }
         localStorage.clear();
     }

@@ -17,7 +17,7 @@ html {
 
 .wrapper-main {
     margin: 0 auto;
-    width: 500px;
+    width: 600px;
 
 }
 
@@ -70,4 +70,14 @@ header {
 .question {
     display: block;
     margin: 10px 0;
+}
+
+.input-answer {
+    height: 80px;
+    width: 400px;
+}
+
+.button-check {
+    height: 80px;
+    width: 150px;
 }
