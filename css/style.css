@@ -12,7 +12,7 @@ html {
 
 .wrapper {
     display: block;
-    min-width: 500px
+    /*min-width: 500px*/
 }
 
 .wrapper-main {
