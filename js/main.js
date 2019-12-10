@@ -3,6 +3,7 @@ const isStorageSupport = true;
 const input1 = document.querySelector('#question-input-1');
 const button1 = document.querySelector('#question-button-1');
 const clearStorage = document.querySelector('#clear');
+const clearAllStorage = document.querySelector('#clearAll');
 
 const allButton = document.querySelector('.questons-block');
 
@@ -67,6 +68,8 @@ clearStorage.addEventListener('click', () => {
         localStorage.clear();
     }
 })
+
+clearAllStorage.addEventListener('click', () => localStorage.clear());
 
 allButton.addEventListener('click', (evt) => {
     var target = event.target;

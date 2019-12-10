@@ -65,3 +65,8 @@ header {
 .head {
     margin: 40px 0 40px 25px
 }
+
+.question {
+    display: block;
+    margin: 10px 0;
+}
