@@ -25,7 +25,8 @@ body {
     font-family: "Gotham",Arial,sans-serif;
     font-size: 18px;
     line-height: 20px;
-    margin: 0
+    margin: 0;
+    background-color: #4f5475;
 }
 
 ul {
