@@ -74,10 +74,10 @@ header {
 
 .input-answer {
     height: 80px;
-    width: 400px;
+    /*width: 400px;*/
 }
 
 .button-check {
     height: 80px;
-    width: 150px;
+    /*width: 150px;*/
 }
