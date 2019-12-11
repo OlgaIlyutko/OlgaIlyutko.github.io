@@ -53,17 +53,17 @@ const loadLastAnswer = () => {
             let key = localStorage.key(i);
             
             let notActiveElement = document.querySelector(key);
-            
-            if (key.split('-')[1] === 'button') {
-                notActiveElement.setAttribute('disabled', 'disabled');
-            }
-            
-            if (key.split('-')[1] === 'input') {
-                notActiveElement.value = localStorage.getItem(key);
-                notActiveElement.setAttribute('disabled', 'disabled');
-            }
-            if (key.split('-')[1] === 'img') {
-                notActiveElement.src = localStorage.getItem(key);
+            switch (key.split('-')[1]) {
+                case 'button':
+                    notActiveElement.setAttribute('disabled', 'disabled');
+                    break;
+                case 'input':
+                    notActiveElement.value = localStorage.getItem(key);
+                    notActiveElement.setAttribute('disabled', 'disabled');
+                    break;
+                case 'img':
+                    notActiveElement.src = localStorage.getItem(key);
+                    break;
             }
         }
     }
@@ -75,10 +75,17 @@ clearStorage.addEventListener('click', () => {
         for (let i=0; i<localStorage.length; i++) {
             let key = localStorage.key(i);            
             let notActiveElement = document.querySelector(key);
-            if (key.split('-')[1] === 'img') {
-                notActiveElement.src = 'img/0.png';
-            } else {
-                notActiveElement.removeAttribute('disabled');
+            switch (key.split('-')[1]) {
+                case 'button':
+                    notActiveElement.removeAttribute('disabled');
+                    break;
+                case 'input':
+                    notActiveElement.value = '';
+                    notActiveElement.removeAttribute('disabled');
+                    break;
+                case 'img':
+                    notActiveElement.src = 'img/0.png';
+                    break;
             }
         }
         localStorage.clear();

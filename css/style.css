@@ -140,13 +140,14 @@ header {
 
     .question {
         display: flex;
-        margin: 10px 0;
+        margin: 20px 0;
     }
 
     .input-answer {
         height: 40px;
         width: 70%;
         margin-right: 15px;
+        border-radius: 15px;
     }
 
     .button-check {
