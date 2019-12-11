@@ -24,9 +24,7 @@ html {
 body {
     font-family: "Gotham",Arial,sans-serif;
     font-size: 18px;
-    line-height: 20px;
     margin: 0;
-    /*background-color: #4f5475;*/
     background: linear-gradient( rgba(255, 255, 255, 0.3), rgba(0, 0, 0, 0.6)), url('../img/snow.jpg');
     background-repeat: repeat;
 }
@@ -97,7 +95,7 @@ header {
 
     .wrapper-main {
         margin: 0 auto;
-        width: 720px;
+        width: 820px;
         font-size: 40px;
     }
 
@@ -112,7 +110,6 @@ header {
     body {
         font-family: "Gotham",Arial,sans-serif;
         font-size: 18px;
-        line-height: 20px;
         margin: 0;
         background-color: white;
     }
