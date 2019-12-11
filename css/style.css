@@ -84,4 +84,80 @@ header {
 
 .img-map {
     margin: 15px 0;
+    width: 625px;
+}
+
+@media (max-width: 767px) {
+    .wrapper {
+        display: block;
+        /*min-width: 500px*/
+    }
+
+    .wrapper-main {
+        margin: 0 auto;
+        width: 320px;
+    }
+
+    .tabs p {
+        margin: 20px 36px;
+    }
+
+    .tabs p {
+        margin: 20px 36px;
+    }
+
+    body {
+        font-family: "Gotham",Arial,sans-serif;
+        font-size: 18px;
+        line-height: 20px;
+        margin: 0;
+        background-color: #4f5475;
+    }
+
+    ul {
+        list-style: none;
+        margin-bottom: 0;
+        margin-top: 0;
+    }
+
+    .h1,h2,li {
+        margin: 0
+    }
+
+    a {
+        text-decoration: none;
+        color: #000
+    }
+
+    header {
+        height: 70px;
+        position: relative
+    }
+
+    .head {
+        margin: 0 36px;
+    }
+
+    .question {
+        display: flex;
+        margin: 10px 0;
+    }
+
+    .input-answer {
+        height: 40px;
+        width: 70%;
+        margin-right: 15px;
+    }
+
+    .button-check {
+        margin: 0;
+        padding: 0;
+        height: 40px;
+        width: 20%;
+    }
+
+    .img-map {
+        width: 100%;
+        margin: 15px 0;
+    }
 }
