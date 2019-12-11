@@ -1,0 +1,165 @@
+*,::before,::after {
+    -webkit-box-sizing: inherit;
+    box-sizing: inherit
+}
+
+html {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+   overflow-y: scroll;
+
+}
+
+.wrapper {
+    display: block;
+    /*min-width: 500px*/
+}
+
+.wrapper-main {
+    margin: 0 auto;
+    width: 800px;
+
+}
+
+body {
+    font-family: "Gotham",Arial,sans-serif;
+    font-size: 18px;
+    line-height: 20px;
+    margin: 0;
+    background-color: #4f5475;
+}
+
+ul {
+    list-style: none;
+  margin-bottom: 0;
+  margin-top: 0;
+}
+
+.h1,h2,li {
+    margin: 0
+}
+
+a {
+    text-decoration: none;
+    color: #000
+}
+
+.visually-hidden:not(:focus):not(:active),input[type=checkbox].visually-hidden,input[type=radio].visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    -webkit-clip-path: inset(100%);
+    clip-path: inset(100%);
+    clip: rect(0,0,0,0);
+    overflow: hidden
+}
+
+header {
+    height: 70px;
+    position: relative
+}
+
+.head {
+    margin: 40px 0 40px 25px
+}
+
+.question {
+    display: block;
+    margin: 10px 0;
+}
+
+.input-answer {
+    height: 40px;
+    width: 70%;
+}
+
+.button-check {
+    height: 40px;
+    width: 20%;
+}
+
+.img-map {
+    margin: 15px 0;
+    width: 625px;
+}
+
+@media (max-width: 1000px) {
+    .wrapper {
+        display: block;
+        /*min-width: 500px*/
+    }
+
+    .wrapper-main {
+        margin: 0 auto;
+        width: 720px;
+    }
+
+    .tabs p {
+        margin: 20px 36px;
+    }
+
+    .tabs p {
+        margin: 20px 36px;
+    }
+
+    body {
+        font-family: "Gotham",Arial,sans-serif;
+        font-size: 18px;
+        line-height: 20px;
+        margin: 0;
+        background-color: #4f5475;
+    }
+
+    ul {
+        list-style: none;
+        margin-bottom: 0;
+        margin-top: 0;
+    }
+
+    .h1,h2,li {
+        margin: 0
+    }
+
+    a {
+        text-decoration: none;
+        color: #000
+    }
+
+    header {
+        height: 70px;
+        position: relative
+    }
+
+    .head {
+        margin: 0 36px;
+    }
+
+    .question {
+        display: flex;
+        margin: 20px 0;
+    }
+
+    .input-answer {
+        height: 60px;
+        width: 50%;
+        margin-right: 15px;
+        border-radius: 20px;
+        font-size: 40px;
+    }
+
+    .button-check {
+        margin: 0;
+        padding: 0;
+        height: 60px;
+        width: 20%;
+    }
+
+    .img-map {
+        width: 100%;
+        margin: 15px 0;
+    }
+}
