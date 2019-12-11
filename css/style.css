@@ -95,7 +95,7 @@ header {
 
     .wrapper-main {
         margin: 0 auto;
-        width: 520px;
+        width: 720px;
     }
 
     .tabs p {
@@ -148,12 +148,14 @@ header {
         width: 50%;
         margin-right: 15px;
         border-radius: 15px;
+        font-size: 30px;
     }
 
     .button-check {
         margin: 0;
         padding: 0;
         height: 40px;
+        border-radius: 15px;
         width: 20%;
     }
 
