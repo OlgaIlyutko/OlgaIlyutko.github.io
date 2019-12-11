@@ -87,7 +87,7 @@ header {
     width: 625px;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 1000px) {
     .wrapper {
         display: block;
         /*min-width: 500px*/
