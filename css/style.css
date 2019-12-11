@@ -96,6 +96,7 @@ header {
     .wrapper-main {
         margin: 0 auto;
         width: 720px;
+        font-size: 40px;
     }
 
     .tabs p {
@@ -144,18 +145,17 @@ header {
     }
 
     .input-answer {
-        height: 60px;
-        width: 50%;
-        margin-right: 15px;
+        height: 70px;
+        width: 60%;
+        margin-right: 35px;
         border-radius: 20px;
-        font-size: 40px;
     }
 
     .button-check {
         margin: 0;
         padding: 0;
-        height: 60px;
-        width: 20%;
+        height: 70px;
+        width: 30%;
     }
 
     .img-map {
