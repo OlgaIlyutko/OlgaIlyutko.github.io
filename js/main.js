@@ -10,9 +10,17 @@ const allButton = document.querySelector('.questons-block');
 
 
 const ANSWER = {
-    '1': '10',
-    '2': '20',
-    '3': '30'
+    '1': 'Ограбление по-мексикански',
+    '2': '29',
+    '3': 'Странная история доктора Джекила и мистера Хайда',
+    '4': 'Стейк',
+    '5': 'Тик так бумм',
+    '6': 'Хозяин этажа',
+    '7': 'Коса',
+    '8': 'Текила',
+    '9': 'Закон Архимеда',
+    '10': 'Незабудки',
+    '11': 'Сплинтер'
 };
 
 const checkAnswer = (evt) => {
@@ -29,7 +37,7 @@ const checkAnswer = (evt) => {
     const activeInput = document.querySelector(activeInputId);
 
     if (!localStorage.getItem("button" + numberQuestions)) {
-        if (activeInput.value === ANSWER[numberQuestions]) {
+        if (activeInput.value.toUpperCase() === ANSWER[numberQuestions].toUpperCase()) {
 
             imgMap.src = 'img/' + numberQuestions + '.png';
             localStorage.setItem('#map-img', imgMap.src);
@@ -41,7 +49,7 @@ const checkAnswer = (evt) => {
             localStorage.setItem(activeInputId, activeInput.value);
         }
         else {
-            alert('Подумай ещё...');
+            alert('Ошибочка...Выпивай штрафную!');
             activeInput.value = '';
         }
     }
