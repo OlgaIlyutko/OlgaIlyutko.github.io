@@ -105,7 +105,8 @@ header {
 
     .wrapper-main {
         margin: 0 auto;
-        width: 820px; 
+        width: 820px;
+        font-size: 40px;
     }
 
     .tabs p {
