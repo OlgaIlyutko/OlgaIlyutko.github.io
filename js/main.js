@@ -92,7 +92,7 @@ clearStorage.addEventListener('click', () => {
                     notActiveElement.removeAttribute('disabled');
                     break;
                 case 'img':
-                    notActiveElement.src = 'img/0.png';
+                    notActiveElement.src = 'img/start.png';
                     break;
             }
         }
