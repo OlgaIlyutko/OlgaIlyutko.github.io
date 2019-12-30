@@ -49,7 +49,7 @@ const checkAnswer = (evt) => {
             localStorage.setItem(activeInputId, activeInput.value);
         }
         else {
-            alert('Ошибочка...Выпивай штрафную!');
+            alert('Ошибочка...Выпивайте штрафную!');
             activeInput.value = '';
         }
     }
